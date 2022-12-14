@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background-attachment: fixed;
+}
+#container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+#nickname {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 10px;
+}
+#input_values {
+  width: 80vw;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 2%;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.35)
+  );
+}
+input,
+button {
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.25)
+  );
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+  padding: 0.2vw 0.2vw;
+  text-align: center;
+  margin-right: 30px;
+}
+button {
+  margin-left: 2vw;
+  width: 10vw;
+  background: #6a994e;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+  color: #6a994e;
+  background-color: #a7c957;
+}
+label {
+  font-weight: bold;
+  line-height: 40px;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+}
+#minesweeper--area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 2vw;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.3);
+}
+#sidebar {
+  width: 20vw;
+  height: 300px;
+  margin: 50px 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 2%;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.35)
+  );
+}
+#timer {
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+#bombs_left {
+  width: 150px;
+  height: 50px;
+  margin-top: 50px;
+}
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#scoreboard {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+#scoreboard > table,
+th,
+td {
+  border: 1px solid black;
+  padding: 1vw;
+}
+ol {
+  margin-left: 2vw;
+}
+.boxes {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: #6a994e;
+  text-align: center;
+  line-height: 30px;
+  user-select: none;
+}
+
+.bombs {
+  background-image: url("../img/mine.png");
+  background-size: cover;
+}
+
+.flags {
+  background-image: url("../img/flag.png");
+  background-size: cover;
+}

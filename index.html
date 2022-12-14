@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nickname">
+        <label for="nickname--input">Nickname: </label>
+        <input
+          type="text"
+          id="nickname--input"
+          name="nickname--input"
+          placeholder="nickname..."
+          maxlength="15"
+        />
+      </div>
+
+      <div id="input_values">
+        <label for="width--input">Width: </label>
+        <input
+          type="number"
+          max="100"
+          min="5"
+          size="3"
+          id="width--input"
+          name="width--input"
+          value="10"
+        />
+
+        <label for="height--input">Height: </label>
+        <input
+          type="number"
+          max="100"
+          min="5"
+          size="3"
+          id="height--input"
+          name="height--input"
+          value="10"
+        />
+
+        <label for="mines--input">Mines: </label>
+        <input
+          type="number"
+          max="50"
+          min="5"
+          size="3"
+          id="mines--input"
+          name="mines--input"
+          value="10"
+        />
+
+        <button id="btn--update">Update</button>
+      </div>
+
+      <div id="content">
+        <div id="minesweeper--area"></div>
+
+        <div id="sidebar">
+          <div id="timer">
+            <p class="time-counter">0:00</p>
+          </div>
+
+          <div id="bombs_left">
+            <p id="bombs_left_p"></p>
+          </div>
+
+          <div id="result">
+            <p id="result_p"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="scoreboard">
+        <h2>Best scores:</h2>
+        <ol id="scores-list"></ol>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
